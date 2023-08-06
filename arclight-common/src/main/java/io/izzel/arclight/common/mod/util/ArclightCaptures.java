@@ -78,7 +78,7 @@ public class ArclightCaptures {
             }
 
             if (unhandledEvents.size() > 0) {
-                ArclightMod.LOGGER.warn("Unhandled secondary block break event");
+//                ArclightMod.LOGGER.warn("Unhandled secondary block break event");
                 eventContext.mergeAllDrops(unhandledEvents);
             }
 
@@ -100,7 +100,7 @@ public class ArclightCaptures {
 
     public static void clearBlockBreakEventContexts() {
         if (!blockBreakEventStack.empty()) {
-            ArclightMod.LOGGER.warn("Unhandled block break event");
+//            ArclightMod.LOGGER.warn("Unhandled block break event");
             blockBreakEventStack.clear();
         }
     }
